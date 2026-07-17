@@ -66,7 +66,7 @@ Resultado:
 
 Pergunta que responde:
 
-Por que aconteceu?
+> Por que aconteceu?
 
 O que faz:
 * Compara grupos
@@ -101,7 +101,7 @@ O que faz:
 
 Pergunta que responde:
 
-O que provavelmente acontecerá?
+> O que provavelmente acontecerá?
 
 ### Objetivo
 
@@ -143,7 +143,7 @@ Resultado:
 
 Pergunta que responde:
 
-O que deve ser feito?
+> O que deve ser feito?
 
 ### Objetivo
 
@@ -180,7 +180,7 @@ O algoritmo recomenda:
 
 Pergunta que responde:
 
-O que existe nos dados?
+> O que existe nos dados?
 
 ### Objetivo
 
