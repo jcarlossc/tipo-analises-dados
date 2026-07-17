@@ -206,7 +206,8 @@ O que faz:
 * Seaborn
 * Plotly
 * Altair
-* Técnicas
+
+### Técnicas
 * Histograma
 * Boxplot
 * Scatter Plot
@@ -229,38 +230,75 @@ Primeiro deseja descobrir:
 
 Pergunta que responde:
 
-Os resultados observados representam a população?
+> Os resultados observados representam a população?
 
 > Baseia-se em probabilidade.
 
-### Exemplos
+### Objetivo
 
+> Generalizar conclusões obtidas em uma amostra.
+
+O que faz:
+
+* Testa hipóteses
+* Mede significância
+* Calcula intervalos de confiança
+
+### Ferramentas
+* Scipy
+* Statsmodels
+* R
+
+### Técnicas
 * Teste t
 * ANOVA
 * Qui-quadrado
-* Intervalo de confiança
 * Valor-p
+* Intervalo de confiança
 
-Muito usada em pesquisas e experimentos.
+### Exemplo
+
+Uma empresa entrevista 1.000 clientes.
+
+Pergunta:
+
+A satisfação média dessa amostra representa todos os clientes?
 
 ## 7. Análise Causal
 
 Pergunta que responde:
 
-Uma variável causa outra?
+> O que causou esse resultado?
 
-> Muito confundida com correlação.
+### Objetivo
 
-### Exemplos
+> Identificar relações de causa e efeito.
 
-* Testes A/B
-* Experimentos
+Importante:
+
+Correlação não implica causalidade.
+
+### Ferramentas
+* DoWhy
+* EconML
+* CausalML
+* Python
+
+### Técnicas
+* Teste A/B
 * Randomização
-* Inferência causal
+* Experimentos
 
 ### Exemplo
 
-"O desconto de 15% aumentou as vendas?"
+Uma empresa oferece:
+
+desconto de 10%
+desconto de 20%
+
+Pergunta:
+
+O desconto realmente aumentou as vendas?
 
 ## 8. Análise Estatística
 
@@ -284,24 +322,42 @@ A Estatística Descritiva faz parte dela.
 
 Pergunta que responde:
 
-Como várias variáveis interagem?
+> Como várias variáveis se relacionam simultaneamente?
 
-## Exemplos
+### Objetivo
 
+> Estudar relações entre múltiplas variáveis.
+
+### Ferramentas
+* Scikit-learn
+* Statsmodels
+
+### Técnicas
 * PCA
-* Clusterização
-* Correlação múltipla
 * Regressão múltipla
+* Clusterização
+* Fatoração
 
-Muito utilizada em Ciência de Dados.
+### Exemplo
+
+Relacionar:
+
+* Idade
+* Salário
+* Escolaridade
+* Consumo
 
 ## 10. Análise de Séries Temporais
 
 Pergunta que responde:
 
-Como os dados evoluem ao longo do tempo?
+> Como os dados evoluem ao longo do tempo?
 
-## Exemplos
+### Objetivo
+
+> Encontrar padrões temporais.
+
+### Técnicas
 
 * Tendência
 * Sazonalidade
@@ -309,36 +365,73 @@ Como os dados evoluem ao longo do tempo?
 * Forecast
 
 ### Ferramentas
-
 * Prophet
 * ARIMA
 * SARIMA
+
+### Exemplo
+
+Prever vendas dos próximos 12 meses.
 
 ## 11. Análise Espacial (Geoespacial)
 
 Pergunta que responde:
 
-Como os dados variam no espaço?
+> Onde os eventos acontecem?
 
-### Exemplos
+### Objetivo
 
+> Analisar a distribuição geográfica.
+
+### Ferramentas
+* GeoPandas
+* Folium
+* Plotly
+* ArcGIS
+
+### Técnicas
 * Mapas
 * Choropleth
 * Heatmaps geográficos
 * Distribuição por região
 
+### Exemplo
+Quais estados possuem maior faturamento?
+
+Como os dados variam no espaço?
+
 ## 12. Análise de Segmentação
+
+Pergunta que responde:
+
+> Quais grupos semelhantes existem?
 
 ### Objetivo
 
-Dividir clientes, produtos ou regiões em grupos.
+> Dividir clientes, produtos ou regiões em grupos.
 
-### Exemplos
+> Agrupar clientes, produtos ou regiões com características parecidas.
 
+### Ferramentas
+* Scikit-learn
+
+### Técnicas
+* K-Means
+* DBSCAN
+* Hierárquico
+* RFM
 * Clusterização
 * RFM
 * Personas
 * Segmentação de mercado
+
+### Exemplo
+Separar clientes em:
+
+* Premium
+* Frequentes
+* Ocasionais
+* Inativos
 
 ## 13. Análise de Sobrevivência
 
