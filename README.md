@@ -17,37 +17,50 @@ Os tipos de análise de dados são categorias que definem a finalidade do estudo
 
 Pergunta que responde:
 
-O que aconteceu?
+> O que aconteceu?
 
 ### Objetivo
 
-Resumir e organizar os dados para entender o cenário atual ou passado.
+> Resumir os dados utilizando estatísticas e indicadores.
 
-### Exemplos
+> É o tipo mais comum em dashboards.
 
-* Receita total
-* Quantidade de clientes
-* Ticket médio
-* Produtos mais vendidos
-* Distribuição por categoria
-* Estatísticas descritivas
-* Histogramas
-* Boxplots
-* KPIs
-* Dashboards
+O que faz:
 
+* Calcula KPIs
+* Resume informações
+* Mede desempenho
+* Gera dashboards
+  
 ### Ferramentas
-
 * SQL
 * Pandas
 * Excel
 * Power BI
 * Tableau
-* Superset
+* Apache Superset
+
+### Técnicas
+* Média
+* Mediana
+* Moda
+* Percentuais
+* Frequências
+* KPIs
+* Estatísticas descritivas
 
 ### Exemplo
+Uma loja deseja saber:
 
-"O faturamento foi de US$ 10 milhões em 2024."
+* Receita total
+* Ticket médio
+* Quantidade de clientes
+* Produto mais vendido
+* Estado com maior faturamento
+
+Resultado:
+
+"O faturamento total foi de R$ 5 milhões."
 
 ## 2. Análise Diagnóstica (Diagnostic Analytics)
 
@@ -55,12 +68,16 @@ Pergunta que responde:
 
 Por que aconteceu?
 
+O que faz:
+* Compara grupos
+* Investiga causas
+* Procura fatores relacionados
+
 ### Objetivo
 
-Descobrir as causas dos resultados observados.
+> Descobrir as causas dos resultados observados.
 
-### Exemplos
-
+### Técnicas
 * Drill-down
 * Comparações
 * Correlações
@@ -71,7 +88,6 @@ Descobrir as causas dos resultados observados.
 * Root Cause Analysis
 
 ### Ferramentas
-
 * SQL
 * Pandas
 * Scipy
@@ -89,28 +105,39 @@ O que provavelmente acontecerá?
 
 ### Objetivo
 
-Prever eventos futuros utilizando modelos estatísticos e Machine Learning.
+> Prever eventos futuros utilizando modelos estatísticos e Machine Learning.
 
 ### Exemplos
-
 * Previsão de vendas
 * Previsão de demanda
 * Churn Prediction
 * Forecast
 * Séries temporais
 
-### Modelos
-
-* Regressão
-* Random Forest
+### Ferramentas
+* Scikit-learn
 * XGBoost
+* LightGBM
 * Prophet
-* ARIMA
-* LSTM
+* TensorFlow
+
+### Técnicas
+* Regressão
+* Árvores
+* Random Forest
+* Redes neurais
 
 ### Exemplo
+Prever:
 
-"As vendas do próximo mês deverão crescer aproximadamente 8%."
+* Vendas do próximo mês
+* Demanda
+* Churn
+* Inadimplência
+
+Resultado:
+
+"As vendas deverão crescer aproximadamente 12%."
 
 ## 4. Análise Prescritiva (Prescriptive Analytics)
 
@@ -120,10 +147,9 @@ O que deve ser feito?
 
 ### Objetivo
 
-Sugerir ações para atingir determinado objetivo.
+> Sugerir ações para atingir determinado objetivo.
 
 ### Exemplos
-
 * Melhor preço
 * Melhor estoque
 * Melhor rota
@@ -131,15 +157,24 @@ Sugerir ações para atingir determinado objetivo.
 * Melhor fornecedor
 
 ### Ferramentas
+* OR-Tools
+* PuLP
+* Pyomo
+* Gurobi
 
-* Pesquisa Operacional
+### Técnicas
 * Otimização
+* Programação Linear
 * Simulação
-* IA
 
 ### Exemplo
+Uma empresa deseja minimizar custos de transporte.
 
-"Reduzir em 10% o estoque do Produto A e aumentar em 20% o investimento na categoria Electronics."
+O algoritmo recomenda:
+
+* Mudar rotas
+* Alterar fornecedores
+* Redistribuir estoques
 
 ## 5. Análise Exploratória (Exploratory Data Analysis — EDA)
 
@@ -147,18 +182,48 @@ Pergunta que responde:
 
 O que existe nos dados?
 
-> É normalmente a primeira etapa de um projeto.
+### Objetivo
 
-> Busca descobrir padrões sem hipóteses prévias.
+> Conhecer os dados antes de qualquer modelagem ou tomada de decisão.
 
-Inclui:
+> É a primeira etapa de praticamente qualquer projeto de análise de dados.
 
-* Gráficos
-* Correlações
-* Distribuições
-* Outliers
-* Qualidade
-* Padrões
+O que faz: 
+
+* Entende a estrutura do dataset
+* Verifica tipos de dados
+* Identifica valores nulos
+* Procura duplicidades
+* Detecta outliers
+* Analisa distribuições
+* Busca padrões
+* Identifica inconsistências
+
+### Ferramentas
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Plotly
+* Altair
+* Técnicas
+* Histograma
+* Boxplot
+* Scatter Plot
+* Heatmap
+* Pair Plot
+* Correlação
+
+### Exemplo
+Uma empresa recebe uma base com 1 milhão de vendas.
+
+Primeiro deseja descobrir:
+
+* Existem dados faltantes?
+* Existem produtos duplicados?
+* Existem preços negativos?
+* Quais categorias existem?
+* Existem valores extremos?
 
 ## 6. Análise Inferencial
 
